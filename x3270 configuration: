@@ -1,0 +1,4 @@
+1. Issue sudo dnf install x3270.x86_64 //* An X Window System based IBM 3278/3279 terminal emulator
+2. Issue sudo dnf instlal x3270-x11.x86_64 //* IBM 3278/3279 terminal emulator for the X Window System
+3. Move .x3270pro and .x3270connect to /home/_usuario_
+4. Add hosts to /etc/hosts:
