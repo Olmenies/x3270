@@ -1,0 +1,61 @@
+! Use MyKeyMap keymap (inherits from base)
+x3270.keymap: MyKeyMap
+
+! Map keys different from base
+x3270.keymap.MyKeyMap: #override \
+        <Key>Return:            Newline()\n\
+        Shift<Key>6:            Key(&)\n\
+        <Key>KP_1:              PF(10)\n\
+        <Key>KP_2:              PF(11)\n\
+        <Key>KP_3:              PF(12)\n\
+        <Key>KP_4:              PF(7)\n\
+        <Key>KP_5:              PF(8)\n\
+        <Key>KP_6:              PF(9)\n\
+        <Key>KP_7:              PF(4)\n\
+        <Key>KP_8:              PF(5)\n\
+        <Key>KP_9:              PF(6)\n\
+        <Key>Num_Lock:          PF(1)\n\
+        <Key>KP_Divide:         PF(2)\n\
+        <Key>KP_Multiply:       PF(3)\n\
+        <Key>Page_Up:           PA(1)\n\
+        <Key>Page_Down:         PA(2)\n\
+        Meta<Key>Home:          PA(1)\n\
+        <Key>End:               EraseEOF()\n\
+        Ctrl<Key>x:             set-select(CLIPBOARD) Cut()\n\
+        Shift<Key>Delete:       set-select(CLIPBOARD) Cut()\n\
+        Ctrl<Key>Insert:        set-select(CLIPBOARD)\n\
+        Shift<Key>Insert:       insert-selection(CLIPBOARD)\n\
+        <Key>Control_R:         Enter()\n\
+        <Key>Escape:            Attn()\n\
+        <Key>Control_L:         Reset()
+
+! Option must be set to avoid pasting into protected area
+x3270.marginedPaste: true
+
+x3270.altCursor: true
+x3270.blankFill: true
+x3270.cursorPos: true
+! x3270.emulatorFont: 8x13
+! x3270.menuBar: false
+x3270.bellVolume: -100
+
+! toggles (-set, -clear)
+x3270.crosshair: true
+
+! File updated Thu Jul 24 07:54:55 2014 by x3270 v3.3.6 Thu Sep 27 06:22:23 EDT 2012 mockbuild
+! emulator font  (-efont)
+x3270.emulatorFont: 3270
+! File updated Mon Jun 22 10:53:01 2015 by x3270 v3.3.6 Wed May 28 13:12:47 EDT 2014 mockbuild
+! charset  (-charset)
+x3270.charset: spanish
+! File updated Fri Jul 24 08:51:27 2015 by x3270 v3.3.6 Wed May 28 13:12:47 EDT 2014 mockbuild
+! charset  (-charset)
+x3270.charset: us-intl
+! File updated Sat Sep  3 23:17:19 2016 by x3270 v3.3.15ga9 Tue Dec 15 12:17:46 EST 2015 mockbuild
+! toggles (-set, -clear)
+x3270.showTiming: true
+! File updated Wed Nov  1 11:05:56 2017 by x3270 v3.3.12ga12 Mon Jan 27 16:40:23 EST 2014 mockbuild
+! emulator font  (-efont)
+x3270.emulatorFont: 3270-20
+ 
+! File updated Wed Jan  2 11:21:03 2019 by x3270 v3.6ga5 Mon Feb 12 10:24:15 UTC 2018 mockbuild
