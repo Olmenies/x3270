@@ -1,0 +1,6 @@
+Full x3270 syntax:
+  [prefix:]...[LUname@]hostname[:port]
+
+###
+Useful links:
+  http://x3270.bgp.nu/Unix/x3270-man.html
